@@ -27,7 +27,7 @@ data_set = data_set.dropna()
 data_set = data_set.drop(['Image', 'Description', 'UPC', 'Product Type', 'Price (incl. tax)', 'Tax', 'Number of reviews'], axis=1)
 
 # Renaming columns
-data_set.rename(columns = {'Price (excl. tax)':'Price'}, inplace = True)
+data_set.rename(columns = {'Price (excl. tax)':'Price', 'Availability':'Stock'}, inplace = True)
 
 # Converting the rating values to numeric data types
 def convert_rating_to_numeric(rating):
@@ -41,11 +41,20 @@ data_set['Rating'] = data_set['Rating'].apply(convert_rating_to_numeric)
 data_set['Rating'] = data_set['Rating'].astype('int')
 
 
-# Removing unwanted characters in the price column
+# Removing unwanted characters in the price and Stock column
 unwanted_chars = r'[Â£]'
+unwanted_text_left = r'[In stock (]'
+unwanted_text_right = r'[ available)]'
 
 data_set['Price'] = data_set['Price'].str.lstrip(unwanted_chars)
 
+data_set['Stock'] = data_set['Stock'].str.lstrip(unwanted_text_left)
+data_set['Stock'] = data_set['Stock'].str.rstrip(unwanted_text_right)
+
 # Convert data type to float
 data_set['Price'] = data_set['Price'].astype('float')
-print(data_set.dtypes)
+
+# Convert data type to int
+data_set['Stock'] = data_set['Stock'].astype('int')
+
+

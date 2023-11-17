@@ -43,3 +43,7 @@ columns like rating and price had been assigned wrong data types(object). They h
 ### Writing file to csv
 
 The cleaned dataset is wrote to the data directory for analysis
+
+### Load cleaned data set
+
+The cleaned data set is loaded into the analyze.py file ready for analysis and visualization

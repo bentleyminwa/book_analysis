@@ -6,7 +6,7 @@ class Loader():
         pass
 
     def load_data_set(): # Loads the books dataset 
-        df = pd.read_csv('data/book_data.csv')
+        df = pd.read_csv('data/book_data.csv', index_col = 'Title')
 
         return df
 

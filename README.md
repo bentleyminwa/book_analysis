@@ -57,3 +57,14 @@ Meaningful insights that could be drawn such a dataset are:
 - Correlation between Pricing and Ratings
 - Genre with the highest rating
 - Average pricing of the books
+
+#### Correlation between Price and Rating
+
+Value obtained for correlation was 0.03014
+
+Correlation values ranges from -1 to 1:
+- 1 indicates a perfect positive correlation
+- 0 indicates no correlation
+- -1 indicates a perfect negative correlation
+
+Analysis indicates there to be a positive correlation between Price and Rating

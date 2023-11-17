@@ -24,13 +24,13 @@ The second step was to check for null values. There were only two null values in
 #### Check and Remove columns that will of no use to our analysis
 
 The columns to be dropped that were essentially of no use to our analysis were:
-"Image"
-"Description"
-"UPC"
-"Product Type"
-"Price (incl. tax)"
-"Tax" - Tax on every book was 0 
-"Number of reviews" - Every review was 0
+- "Image"
+- "Description"
+- "UPC"
+- "Product Type"
+- "Price (incl. tax)"
+- "Tax" - Tax on every book was 0 
+- "Number of reviews" - Every review was 0
 
 #### Renaming columns
 

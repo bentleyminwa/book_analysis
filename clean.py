@@ -24,3 +24,8 @@ explore()
 data_set = data_set.dropna()
 
 # Checking and Removing columns that will be of no use for analysis
+data_set = data_set.drop(['Image', 'Description', 'UPC', 'Product Type', 'Price (incl. tax)', 'Tax', 'Number of reviews'], axis=1)
+
+# Renaming columns
+data_set.rename(columns = {'Price (excl. tax)':'Price'}, inplace = True)
+

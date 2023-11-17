@@ -30,4 +30,8 @@ The columns to be dropped that were essentially of no use to our analysis were:
 "Product Type"
 "Price (incl. tax)"
 "Tax" - Tax on every book was 0 
-"Review" - Every review was 0
+"Number of reviews" - Every review was 0
+
+### Renaming columns
+
+Some columns that remained were not properly named.

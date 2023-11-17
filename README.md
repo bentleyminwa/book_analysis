@@ -47,3 +47,13 @@ The cleaned dataset is wrote to the data directory for analysis
 ### Load cleaned data set
 
 The cleaned data set is loaded into the analyze.py file ready for analysis and visualization
+
+### Analysis
+
+Meaningful insights that could be drawn such a dataset are:
+
+- Books with highest ratings
+- Category/Genre that is most available
+- Correlation between Pricing and Ratings
+- Genre with the highest rating
+- Average pricing of the books

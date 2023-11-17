@@ -6,7 +6,6 @@ from load_data import Loader
 data_set = Loader.load_data_set()
 
 
-
 # Explore the data set
 def explore():
     display_cols = print(data_set.columns)         # returns the column names in the dataframe
@@ -16,8 +15,7 @@ def explore():
     return display_cols, display_info, display_stats
 
 
-# explore()
-
+explore()
 
 
 # Dropping the rows with null values
@@ -57,4 +55,5 @@ data_set['Price'] = data_set['Price'].astype('float')
 # Convert data type to int
 data_set['Stock'] = data_set['Stock'].astype('int')
 
+# Write cleaned data to csv
 cln_data = data_set.to_csv('data/cln_book_data.csv')

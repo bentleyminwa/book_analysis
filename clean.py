@@ -57,4 +57,4 @@ data_set['Price'] = data_set['Price'].astype('float')
 # Convert data type to int
 data_set['Stock'] = data_set['Stock'].astype('int')
 
-
+cln_data = data_set.to_csv('data/cln_book_data.csv')

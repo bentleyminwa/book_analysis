@@ -35,3 +35,7 @@ The columns to be dropped that were essentially of no use to our analysis were:
 ### Renaming columns
 
 Some columns that remained were not properly named.
+
+### Converting data types
+
+columns like rating and price had been assigned wrong data types(object). They had to be converted to int and float respectively
